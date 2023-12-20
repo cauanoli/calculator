@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="Calculator">
+      <div class="calculator">
         <div class="display">
-          <div class="operation"></div>
-          <div class="previous"></div>
-          <div class="current"></div>
+          <div class="previous">123123</div>
+          <div class="current">
+            <div class="operation">+</div>
+            <div class="current-number">123123</div>
+          </div>
         </div>
 
         <div class="buttons-container">
@@ -24,7 +27,7 @@
             <button class="number">7</button>
             <button class="number">8</button>
             <button class="number">9</button>
-            <button ="operator" id="multiplication">*</button>
+            <button class="operator" id="multiplication">*</button>
           </div>
 
           <div class="row">
@@ -44,7 +47,7 @@
           <div class="row">
             <button class="number">0</button>
             <button id="backspace">⌫</button>
-            <button class="operation" id="equal">=</button>
+            <button class="operator" id="equal">=</button>
           </div>
         </div>
       </div>
