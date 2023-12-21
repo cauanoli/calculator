@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="calculator">
         <div class="display">
-          <div class="previous">123123</div>
+          <div class="previous"></div>
           <div class="current">
-            <div class="operation">+</div>
-            <div class="current-number">123123</div>
+            <div class="operation"></div>
+            <div class="current-number"></div>
           </div>
         </div>
 
@@ -27,27 +28,27 @@
             <button class="number">7</button>
             <button class="number">8</button>
             <button class="number">9</button>
-            <button class="operator" id="multiplication">*</button>
+            <button id="multiplication" class="operator">x</button>
           </div>
 
           <div class="row">
             <button class="number">4</button>
             <button class="number">5</button>
             <button class="number">6</button>
-            <button class="operator" id="minus">-</button>
+            <button id="subtraction" class="operator">-</button>
           </div>
 
           <div class="row">
             <button class="number">1</button>
             <button class="number">2</button>
             <button class="number">3</button>
-            <button class="operator" id="plus">+</button>
+            <button id="addition" class="operator">+</button>
           </div>
 
           <div class="row">
             <button class="number">0</button>
             <button id="backspace">⌫</button>
-            <button class="operator" id="equal">=</button>
+            <button id="equals">=</button>
           </div>
         </div>
       </div>
