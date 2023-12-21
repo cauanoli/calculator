@@ -72,6 +72,7 @@ function updateDisplay(firstNumber, secondNumber, operation) {
   let firstNumber = null;
   let secondNumber = null;
   let currentOperation = null;
+  const maxNumberWidth = 10;
   const operationButtons = document.querySelectorAll(".operator");
   const numbers = document.querySelectorAll(".number");
 
@@ -134,6 +135,7 @@ function updateDisplay(firstNumber, secondNumber, operation) {
 
       if (
         firstNumber !== null &&
+        firstNumber.length < maxNumberWidth &&
         currentOperation === null &&
         secondNumber === null
       ) {
@@ -151,7 +153,12 @@ function updateDisplay(firstNumber, secondNumber, operation) {
         }
       }
 
-      if (firstNumber && currentOperation && secondNumber) {
+      if (
+        firstNumber &&
+        currentOperation &&
+        secondNumber &&
+        secondNumber.length < maxNumberWidth
+      ) {
         secondNumber += value;
         // makes the current number typed show in the bigger font
         updateDisplay(firstNumber, secondNumber, currentOperation);
